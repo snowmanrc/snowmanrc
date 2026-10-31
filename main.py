@@ -1,0 +1,30 @@
+import subprocess
+import readme
+import sys
+
+
+def pushToGithub():
+
+	if len(sys.argv) > 1 and sys.argv[1] == 'manual':
+		commit = input("> Enter Commit Message: ")
+	else:
+		commit = "manual"
+
+	print("* Pushing to github...")
+
+	subprocess.run("git pull", shell=True, capture_output=True)
+	subprocess.run("git add .", shell=True, capture_output=True)
+	subprocess.run(f"git commit -m '{commit}'", shell=True, capture_output=True)
+	subprocess.run("git push", shell=True, capture_output=True)
+	print("* Successfully pushed to github.")
+
+def main():
+	readme.make()
+	pushToGithub()
+
+
+if __name__ == "__main__":
+	try:
+		main()
+	except KeyboardInterrupt:
+		print("\n* Aborted")

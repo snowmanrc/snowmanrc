@@ -1,0 +1,37 @@
+{
+	"name": "A. Haseeb",
+	"location": "Lahore, Pakistan",
+	"birthday": [2008, 7, 29],
+	"role": "BS CS student @ FAST NUCES (Lahore)",
+	"hobbies": [
+		"Learning about computers & low level software",
+		"Solving algo and computation problems",
+		"Professionally losing in chess",
+		"Reading manga (currently JJBA Part 6)"
+	],
+	"expertise": [
+		"Systems Programming",
+		"Software Architecture",
+		"Language Design",
+		"Automation"
+	],
+	"technologies.os": "linux (i use arch btw)",
+	"technologies.languages": [
+		"c",
+		"c++",
+		"python",
+		"bash"
+	],
+	"technologies.tools": [
+		"gcc",
+		"clang",
+		"gdb",
+		"git",
+		"vscode",
+		"uv"
+	],
+	"contactInfo": {
+		"mail"    : "abdulhaseeb.8j@gmail.com",
+		"discord" : "kxmtkw"
+	}
+}
