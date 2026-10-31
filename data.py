@@ -34,13 +34,13 @@ def role() -> str:
 
 
 def age() -> str:
-	birthday_raw = getData().get("birthday", [0, 0])
-	birthday = datetime(birthday_raw[0], birthday_raw[1], 1)
+	birthday_raw = getData().get("birthday", [0, 0, 0])
+	birthday = datetime(birthday_raw[0], birthday_raw[1], birthday_raw[2])
 	today = datetime.now()
 
 	span = relativedelta(today, birthday)
 
-	return f"{span.years} Years, {span.months} Month{'s' if span.months != 1 else ''}"
+	return f"{span.years} Years, {span.months} Month{'s' if span.months != 1 else ''}, {span.days} Day{'s' if span.days != 1 else ''}"
 
 
 def expertise() -> list[str]:
